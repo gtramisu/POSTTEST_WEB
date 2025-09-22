@@ -9,12 +9,12 @@
     --color-black: #000;
     --color-bg-light: #f5f7fa;
     --color-bg-dark: #1a1a1a;
-    
+
     --font-main: 'Poppins', sans-serif;
-    
+
     --shadow-md: 0 5px 15px rgba(0,0,0,0.12);
     --shadow-lg: 0 8px 25px rgba(0,0,0,0.2);
-    
+
     --spacing-sm: 15px;
     --spacing-md: 25px;
     --spacing-lg: 50px;
@@ -71,7 +71,7 @@ h1, h2, h3 {
 .btn-secondary:hover {
     background: #d4d4d4;
     transform: translateY(-3px);
-    box-shadow: 0 44px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .header {
@@ -117,16 +117,19 @@ main {
     box-shadow: var(--shadow-md);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
 }
 
-.paymAent-table {
+.payment-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: var(--spacing-md);
+    background: var(--color-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
 }
 .payment-table th, .payment-table td {
     padding: 15px;
@@ -134,12 +137,15 @@ main {
     border-bottom: 1px solid #ddd;
 }
 .payment-table th {
-    background: var(--color-bg-light);
+    background: var(--color-primary-light);
     font-weight: 600;
-    color: var(--color-text-dark);
+    color: var(--color-white);
 }
 .payment-table tr:last-child td {
     border-bottom: none;
+}
+.payment-table tr:hover {
+    background: #f1f5f9;
 }
 
 .radio-group {
@@ -189,7 +195,6 @@ main {
     border-radius: 12px;
     box-shadow: var(--shadow-md);
 }
-
 .form-group {
     display: flex;
     flex-direction: column;
@@ -224,13 +229,18 @@ main {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
+    background: var(--color-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
 }
 .faq-table th, .faq-table td {
     padding: 15px;
     border-bottom: 1px solid #ddd;
 }
 .faq-table th {
-    background: var(--color-bg-light);
+    background: var(--color-primary-light);
+    color: var(--color-white);
     font-weight: 600;
 }
 .faq-table tr:last-child td {
@@ -240,6 +250,10 @@ main {
     font-weight: 600;
     width: 40%;
 }
+.faq-table tr:hover {
+    background: #f1f5f9;
+}
+
 .contact-links {
     display: flex;
     justify-content: center;
@@ -271,17 +285,17 @@ footer a {
 .hero {
     background: var(--color-primary-dark);
     padding-top: 0;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
     color: var(--color-white);
     position: relative;
     overflow: hidden;
 }
 .hero-banner {
-  max-width: 100%;   
-  width: 600px;      
-  height: auto;      
-  margin: 0 auto;    
-  display: block;    
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 .hero-text {
     position: relative;
@@ -312,7 +326,6 @@ footer a {
     max-width: 900px;
     margin: 0 auto;
 }
-
 .card-icon {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -339,4 +352,3 @@ footer a {
         max-width: 400px;
     }
 }
-
