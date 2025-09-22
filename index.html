@@ -1,118 +1,63 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Robuxify — Top Up Roblox</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Robuxify — Top Up Robux Murah & Cepat</title>
+
+    <link rel="icon" type="image/png" href="images/rocket.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Menghubungkan ke file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="header">
+        <h1>Robuxify</h1>
+        <nav class="navbar">
+            <a href="index.html">🏠 Beranda</a>
+            <a href="beli1.html">🛒 Beli Robux</a>
+            <a href="cek-pesanan.html">📦 Cek Pesanan</a>
+            <a href="bantuan.html">❓ Bantuan</a>
+        </nav>
+    </header>
 
-  <!-- HEADER -->
-  <header>
-    <h1>Robuxify</h1>
-    <nav>
-      <a href="#beranda">Beranda</a> |
-      <a href="#paket">Daftar Paket</a> |
-      <a href="#beli">Beli Robux</a> |
-      <a href="#pembayaran">Pembayaran</a> |
-      <a href="#bantuan">Bantuan</a>
-    </nav>
-    <hr>
-  </header>
+    <section class="hero text-center">
+        <img src="images/wow.png" alt="Hero Banner" class="hero-banner">
+        <div class="hero-text">
+            <h2>Top Up Robux Murah & Cepat 🚀</h2>
+            <p>Mulai dari Rp6.000 aja — Aman 100% dan terpercaya!</p>
+            <a href="beli1.html" class="btn btn-primary mt-2">⚡ Beli Sekarang</a>
+        </div>
+    </section>
 
-  <!-- BERANDA -->
-  <section id="beranda">
-    <h2>Selamat Datang di Robuxify</h2>
-    <p>Tempat top up Robux cepat, murah, dan terpercaya.</p>
-  </section>
+    <section class="features text-center">
+        <h2 class="mb-3">🔥 Kenapa Pilih Robuxify?</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">⚡</div>
+                <h3>Proses Cepat</h3>
+                <p>Top up masuk hanya dalam hitungan detik.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🔒</div>
+                <h3>Aman</h3>
+                <p>Dijamin 100% aman dan terpercaya.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💰</div>
+                <h3>Murah</h3>
+                <p>Harga termurah mulai dari Rp6.000.</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- DAFTAR PAKET ROBUX -->
-  <section id="paket">
-    <h2>Daftar Paket Robux</h2>
-    <table border="1" cellpadding="8" cellspacing="0">
-      <tr><th>Jumlah Robux</th><th>Harga</th></tr>
-      <tr><td>50 Robux</td><td>Rp6.000</td></tr>
-      <tr><td>100 Robux</td><td>Rp12.000</td></tr>
-      <tr><td>150 Robux</td><td>Rp18.000</td></tr>
-      <tr><td>200 Robux</td><td>Rp24.000</td></tr>
-      <tr><td>250 Robux</td><td>Rp30.000</td></tr>
-      <tr><td>500 Robux</td><td>Rp60.000</td></tr>
-      <tr><td>1000 Robux</td><td>Rp120.000</td></tr>
-    </table>
-  </section>
-
-  <!-- BELI ROBUX -->
-  <section id="beli">
-    <h2>Beli Robux</h2>
-    <p>Isi data berikut untuk melakukan pembelian!:</p>
-    <table border="1" cellpadding="8" cellspacing="0">
-      <tr>
-        <td>Username Roblox</td>
-        <td><input type="text" placeholder="Masukkan username"></td>
-      </tr>
-      <tr>
-        <td>Email</td>
-        <td><input type="email" placeholder="Masukkan email kamu"></td>
-      </tr>
-      <tr>
-        <td>Paket Robux</td>
-        <td>
-          <select>
-            <option>50 Robux - Rp6.000</option>
-            <option>100 Robux - Rp12.000</option>
-            <option>150 Robux - Rp18.000</option>
-            <option>200 Robux - Rp24.000</option>
-            <option>250 Robux - Rp30.000</option>
-            <option>500 Robux - Rp60.000</option>
-            <option>1000 Robux - Rp120.000</option>
-          </select>
-        </td>
-      </tr>
-    </table>
-
-    <h3>Cara Pembayaran</h3>
-    <p>Setelah memilih paket, silakan transfer sesuai jumlah yang dipilih ke rekening/e-wallet kami.  
-    Konfirmasi pembayaran via WhatsApp atau Instagram. Robux akan dikirim sesuai paket yang dipilih.</p>
-    <h3>Pilih Metode Pembayaran</h3>
-      <form>
-    <input type="radio" name="metode" value="bca"> BCA<br>
-    <input type="radio" name="metode" value="mandiri"> Mandiri<br>
-    <input type="radio" name="metode" value="gopay"> Gopay<br>
-    <input type="radio" name="metode" value="dana"> Dana<br>
-    <input type="radio" name="metode" value="ovo"> OVO<br>
-    <input type="radio" name="metode" value="shopeepay"> Shopeepay<br>
-    <input type="radio" name="metode" value="linkaja"> LinkAja<br>
-  </form>
-
-
-    <!-- Tombol konfirmasi -->
-    <p><a href="#konfirmasi"><button>✅ Konfirmasi Pesanan</button></a></p>
-  </section>
-
-  <!-- KONFIRMASI PESANAN -->
-  <section id="konfirmasi">
-    <h2>🎉 Pesanan Berhasil Dikofirmasi!</h2>
-    <p>Terima kasih sudah membeli di Robuxify.</p>
-    <p>Robux akan masuk ke akunmu sesuai jumlah yang dipilih setelah pembayaran diterima, silahkan periksa di email anda.</p>
-  </section>
-
-  <!-- BANTUAN -->
-  <section id="bantuan">
-    <h2>Bantuan</h2>
-    <table border="1" cellpadding="8" cellspacing="0">
-      <tr><th>Pertanyaan</th><th>Jawaban</th></tr>
-      <tr><td>Berapa lama proses top up?</td><td>1-10 menit setelah pembayaran</td></tr>
-      <tr><td>Metode pembayaran?</td><td>Transfer bank, e-wallet, pulsa</td></tr>
-      <tr><td>Jika pesanan belum masuk?</td><td>Hubungi admin</td></tr>
-    </table>
-    <p>Kontak: WhatsApp 085822161864, Instagram @gtramisu</p>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <hr>
-    <p>© 2025 Robuxify</p>
-  </footer>
-
+    <footer>
+        <p>© 2025 Robuxify</p>
+        <p>Referensi desain: <a href="https://golroblox.com/" target="_blank">golroblox.com</a></p>
+    </footer>
 </body>
 </html>
