@@ -53,6 +53,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </main>
 <footer>
     <p>© 2025 Robuxify</p>
+    <p>Referensi desain: <a href="https://golroblox.com/" target="_blank">golroblox.com</a></p> 
 </footer>
 </body>
 </html>
+
