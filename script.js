@@ -39,4 +39,3 @@ loadTheme();
 if (themeToggle) {
     themeToggle.addEventListener('click', toggleTheme);
 }
-
