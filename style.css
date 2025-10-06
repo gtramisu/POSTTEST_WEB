@@ -49,7 +49,6 @@ h1, h2, h3 {
     margin-bottom: 10px;
 } 
 
-
 /* --- 2. Utility Classes --- */
 .text-center { text-align: center; } 
 .mt-2 { margin-top: var(--spacing-md); } 
@@ -629,3 +628,4 @@ body.dark-mode footer {
     background: var(--color-primary-dark);
     color: var(--color-text-dark);
 }
+
